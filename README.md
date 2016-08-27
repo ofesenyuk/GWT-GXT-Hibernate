@@ -15,3 +15,7 @@ Tag (inherits name="com.google.gwt.logging.Logging"), along with (set-property n
 
 Tag (source path='shared') is used to data interchange between client side and server side (see UserGWT class).
 
+Tag (add-linker name="xsiframe") is used when GWT < 2.7
+I removed this tag and changed gwt.version from 2.6.1 to 2.7.? in pom.xml file. But the application ceased to work. I found solution in internet, to create some class in com.google.* with some method. (I am sorry, but I do not remember details.); and application became working.
+I also changed source in pom.xml from 1.7 to 1.8 but received errors. I returned to 1.7. However, when I compiled with JDK 1.8, I did not received errors in GreetingFactory1, where java.time.LocalTime is  used. But I kept GreetingFactory (JDK 1.7 compatible).
+
