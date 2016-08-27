@@ -9,9 +9,9 @@ Let me desribe how I developed this application.
 
 I generated GXT project according to the directives given at https://docs.sencha.com/gxt/3.x/getting_started/maven/Archetypes.html. I received maven project with the structure inherent to GWT-project.
 I made some settings in "Project.gwt.xml"-file. 
-Tags <inherits name="com.google.gwt.activity.Activity"/> <inherits name="com.google.gwt.place.Place"/> 
-<replace-with class="com.mycompany.gwthibernate.client.ClientFactoryImpl"> <when-type-is class="com.mycompany.gwthibernate.client.ClientFactory"/>  </replace-with> are essential for Model-View-Presenter (MVP-pattern) functionality which I used to redirect from the registration page to the greening page (for the backward transition I used redirect via href).
-Tag <inherits name="com.google.gwt.logging.Logging"/>, along with <set-property name="gwt.logging......" value="..."/>,  is used for logging in browser side.
+Tags inherits name="com.google.gwt.activity.Activity" inherits name="com.google.gwt.place.Place"
+replace-with class="com.mycompany.gwthibernate.client.ClientFactoryImpl" when-type-is class="com.mycompany.gwthibernate.client.ClientFactory"  replace-with are essential for Model-View-Presenter (MVP-pattern) functionality which I used to redirect from the registration page to the greening page (for the backward transition I used redirect via href).
+Tag inherits name="com.google.gwt.logging.Logging", along with set-property name="gwt.logging......" value="...",  is used for logging in browser side.
 
-Tag <source path='shared' /> is used to interchange tha data between client side and server side (see UserGWT class).
+Tag source path='shared'  is used to interchange tha data between client side and server side (see UserGWT class).
 
