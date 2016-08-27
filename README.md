@@ -13,5 +13,5 @@ Tags (inherits name="com.google.gwt.activity.Activity"), (inherits name="com.goo
 (replace-with class="com.mycompany.gwthibernate.client.ClientFactoryImpl" when-type-is class="com.mycompany.gwthibernate.client.ClientFactory"  replace-with) are essential for Model-View-Presenter (MVP-pattern) functionality which I used to redirect from the registration page to the greening page (for the backward transition I used redirect via href).
 Tag (inherits name="com.google.gwt.logging.Logging"), along with (set-property name="gwt.logging......" value="..."),  is used for logging in browser side.
 
-Tag (source path='shared')  is used to interchange tha data between client side and server side (see UserGWT class).
+Tag (source path='shared') is used to data interchange between client side and server side (see UserGWT class).
 
